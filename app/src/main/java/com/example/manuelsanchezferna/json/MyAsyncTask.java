@@ -78,9 +78,9 @@ public class MyAsyncTask extends AsyncTask <String,Void,Boolean> {
         progressDialog.dismiss();
         if( resul )
         {
-            builder.setMessage("Imagen subida al servidor")
-                    .setTitle("Se ha subido correctamente")
-                    .setNeutralButton("Aceptar", new DialogInterface.OnClickListener() {
+            builder.setMessage(R.string.subir_imagen)
+                    .setTitle(R.string.correct_imagen)
+                    .setNeutralButton(R.string.acceptar, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog,int which) {
                             dialog.cancel();
                         }
@@ -109,9 +109,9 @@ public class MyAsyncTask extends AsyncTask <String,Void,Boolean> {
         }
         else
         {
-            builder.setMessage("No se pudo subir la imagen")
-                    .setTitle("Error")
-                    .setNeutralButton("Aceptar", new DialogInterface.OnClickListener() {
+            builder.setMessage(R.string.error_imagen)
+                    .setTitle(R.string.error)
+                    .setNeutralButton(R.string.acceptar, new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog,int which) {
                             dialog.cancel();
                         }

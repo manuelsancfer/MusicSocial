@@ -1,7 +1,9 @@
 package com.example.manuelsanchezferna.json;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String usuario;
 
-
+    AlertDialog.Builder builder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         usuario = intent.getStringExtra("KEY_USUARIO");
+
+        makeText();
 
         top.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,6 +76,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void makeText(){
+        builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setTitle(R.string.bienvenida)
+                .setNeutralButton(R.string.acceptar, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,int which) {
+                        dialog.cancel();
+                    }
+                }).create().show();
+    }
 
     private void JvideosRecyclerVid(String url) {
 

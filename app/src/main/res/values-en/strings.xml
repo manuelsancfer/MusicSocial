@@ -106,7 +106,6 @@
     </string-array>
 
     <string name="i_song">There was a problem and the song selected could not be found. Try it again later.</string>
-    <string name="INICIO">MusicSocial</string>
     <string name="IniciarSesion">Log in</string>
     <string name="SCREAMO">SCREAMO</string>
     <string name="Vuelva">Repetiu la contrasenya</string>
@@ -116,4 +115,10 @@
     <string name="CrearUsuario">Create new user</string>
     <string name="e_passw">The password must have between 8 and 14 characters</string>
     <string name="title_activity_login">Log in</string>
+    <string name="subir_imagen">Image uploaded to the server</string>
+    <string name="correct_imagen">Uploaded successfully</string>
+    <string name="acceptar">Accept</string>
+    <string name="error_imagen">Couldn\'t upload the image</string>
+    <string name="bienvenida">Welcome to MusicSocial!</string>
+    <string name="saludo">Welcome!</string>
 </resources>

@@ -107,7 +107,6 @@
         <item>Favorit 3</item>
         <item>Favorit 4</item>
     </string-array>
-    <string name="INICIO">MusicSocial</string>
     <string name="IniciarSesion">Iniciar sessió</string>
     <string name="SCREAMO">SCREAMO</string>
     <string name="Vuelva">Repeat password</string>
@@ -117,5 +116,11 @@
     <string name="CrearUsuario">Crear nou usuari</string>
     <string name="e_passw">La constrasenya ha de tenir entre 8 i 14 caràcters</string>
     <string name="title_activity_login">Iniciar sessió</string>
+    <string name="subir_imagen">Imatge penjada al servidor</string>
+    <string name="correct_imagen">S\'ha penjat correctament</string>
+    <string name="acceptar">Acceptar</string>
+    <string name="error_imagen">No s\'ha pogut penjar la imatge</string>
+    <string name="bienvenida">Benvolgut a MusicSocial!</string>
+    <string name="saludo">Benvolgut!</string>
 
 </resources>

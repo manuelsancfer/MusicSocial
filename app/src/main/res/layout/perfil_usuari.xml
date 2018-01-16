@@ -81,8 +81,9 @@
         android:id="@+id/amigos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/linia_amigos"
         android:layout_marginLeft="60dp"
-        android:layout_marginTop="215dp"
+        android:layout_marginTop="6dp"
         android:text="@string/Amigos"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -91,8 +92,9 @@
         android:id="@+id/numamigos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="90dp"
-        android:layout_marginTop="235dp"
+        android:layout_below="@+id/amigos"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="2dp"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -100,8 +102,9 @@
         android:id="@+id/siguiendo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/linia_amigos"
         android:layout_marginLeft="215dp"
-        android:layout_marginTop="215dp"
+        android:layout_marginTop="6dp"
         android:text="@string/Siguiendo"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -112,7 +115,8 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginTop="235dp"
+        android:layout_below="@+id/siguiendo"
+        android:layout_marginTop="2dp"
         android:layout_marginLeft="255dp" />
 
     <TextView

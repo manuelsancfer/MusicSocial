@@ -153,8 +153,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/seguidores"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="2dp"
         android:textSize="18sp"
         android:textStyle="bold"
          />
@@ -178,8 +178,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/siguiendo1"
-        android:layout_marginLeft="208dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="2dp"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -200,8 +200,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/amigos1"
-        android:layout_marginLeft="326dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginLeft="324dp"
+        android:layout_marginTop="2dp"
         android:textSize="18sp"
         android:textStyle="bold" />
 

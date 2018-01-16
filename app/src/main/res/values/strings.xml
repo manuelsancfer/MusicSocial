@@ -119,4 +119,11 @@
     <string name="e_inicio">La contraseña o el usuario está mal</string>
     <string name="e_pass">Las contraseñas deben ser iguales</string>
     <string name="e_passw">La contraseña debe tener entre 8 y 14 carácteres</string>
+    <string name="subir_imagen">Imagen subida al servidor</string>
+    <string name="correct_imagen">Se ha subido correctamente</string>
+    <string name="acceptar">Aceptar</string>
+    <string name="error" translatable="false">Error</string>
+    <string name="error_imagen">No se pudo subir la imagen</string>
+    <string name="bienvenida">Bienvenido a MusicSocial!</string>
+    <string name="saludo">Bienvenido!</string>
 </resources>
