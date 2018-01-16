@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MusicSocial</string>
+    <string name="Contrasenya">Contrasenya:</string>
+    <string name="Cambiar">Canviar</string>
+    <string name="Favoritos">Favorits:</string>
+    <string name="Gustos_musicales">Gustos musicals:</string>
+    <string name="Privado">Privat</string>
+    <string name="Publico">Públic</string>
+    <string name="Subir_foto">Penjar foto</string>
+    <string name="Usuario">Usuari:</string>
+    <string name="configuracion_de_perfil">Configuració de perfil</string>
+    <string name="TOP_VIDEOS">TOP VÍDEOS</string>
+    <string name="VIDEOS">VÍDEOS</string>
+    <string name="Amigos">AMICS</string>
+    <string name="Descripcion_del_artista">Descripció de l\'artista</string>
+    <string name="Email">Email:</string>
+    <string name="FAVORITOS">FAVORITS</string>
+    <string name="Foto_perfil">Foto de perfil:</string>
+    <string name="Puntuacion">Puntuació</string>
+    <string name="Seguidores">SEGUIDORS</string>
+    <string name="Siguiendo">SEGUINT</string>
+    <string name="Mis_videos">Els meus vídeos</string>
+    <string name="VIDEOS_FAVORITOS">VÍDEOS FAVORITS</string>
+
+    <string-array name="desplegable">
+        <item>Principal</item>
+        <item>Perfil</item>
+        <item>Llistes de reproducció</item>
+        <item>Gèneres</item>
+        <item>Agenda</item>
+        <item>Configuració</item>
+    </string-array>
+
+    <string-array name="desplegable2">
+        <item>Perfil</item>
+        <item>Principal</item>
+        <item>Llistes de reproducció</item>
+        <item>Gèneres</item>
+        <item>Agenda</item>
+        <item>Configuració</item>
+    </string-array>
+
+    <string-array name="desplegable4">
+        <item>Gèneres</item>
+        <item>Principal</item>
+        <item>Perfil</item>
+        <item>Llistes de reproducció</item>
+        <item>Agenda</item>
+        <item>Configuració</item>
+    </string-array>
+
+    <string-array name="desplegable6">
+        <item>Configuració</item>
+        <item>Principal</item>
+        <item>Perfil</item>
+        <item>Llistes de reproducció</item>
+        <item>Gèneres</item>
+        <item>Agenda</item>
+    </string-array>
+    <string-array name="desplegableA">
+        <item>Artista</item>
+        <item>Perfil</item>
+        <item>Principal</item>
+        <item>Llistes de reproducció</item>
+        <item>Gèneres</item>
+        <item>Agenda</item>
+        <item>Configuració</item>
+    </string-array>
+
+    <string name="a_contrasenya">La contrasenya s\'ha canviat amb èxit</string>
+    <string name="a_email">E-mail canviat amb èxit</string>
+    <string name="a_gustos">Gustos musicals canviats amb èxit</string>
+    <string name="i_foto">Error carregant la foto de perfil. El servidor no està actiu a hores d\'ara, intenteu més tard</string>
+    <string name="i_json">El servidor està actualment fora de servei, intenteu més tard</string>
+    <string name="i_contrasenya">No s\'ha pogut canviar la contrasenya, el servidor no està actiu
+     intente-ho més tard</string>
+    <string name="e_contrasenya">No\'s ha pogut canviar la contrasenya, ha de tenir entre 8 i 14 caràcters</string>
+    <string name="i_email">No s\'ha pogut canviar-se el correu electrònic, el servidor no està actiu
+     intente-ho més tard</string>
+    <string name="i_gustos">No s\'han pogut canviar els gustos, el servidor no està actiu
+     intenteu més tard</string>
+    <string name="i_priv">No s\'ha pogut canviar la privacitat, el servidor no està actiu
+     intenteu més tard</string>
+    <string name="a_priv">Privacitat canviada amb èxit</string>
+    <string name="i_videos">El servidor està actualment fora de servei, no es poden carregar els vídeos.
+         Intente-ho més tard</string>
+    <string name="ROCK">ROCK</string>
+    <string name="HipHop">HIP HOP</string>
+    <string name="RAPMETAL">RAP METAL</string>
+    <string name="FUSION">FUSIÓ</string>
+    <string name="GENEROS">GÈNERES</string>
+    <string name="BLUES">BLUES</string>
+    <string name="Follow">Follow</string>
+    <string name="Unfollow">Unfollow</string>
+    <string name="a_follow">Has començat a seguir a</string>
+    <string name="a_unfollow">Has deixat de seguir a</string>
+    <string name="i_follow">No ha pogut seguir / deixar de seguir per problemes al servidor</string>
+    <string name="i_atras">Ho sentim, no pot tornar enrere des d\'aquí</string>
+    <string name="i_fotonull">Heu de seleccionar una foto per poder continuar</string>
+    <string name="i_song">Hi ha hagut un problema i no s\'ha pogut trobar la cançó seleccionada. Intenteu-ho més tard.</string>
+
+    <string-array name="addfav">
+        <item>Añadir a favorits</item>
+        <item>Favorit 1</item>
+        <item>Favorit 2</item>
+        <item>Favorit 3</item>
+        <item>Favorit 4</item>
+    </string-array>
+    <string name="INICIO">MusicSocial</string>
+    <string name="IniciarSesion">Iniciar sessió</string>
+    <string name="SCREAMO">SCREAMO</string>
+    <string name="Vuelva">Repeat password</string>
+    <string name="crea">Crea un nou usuari</string>
+    <string name="e_inicio">La contrasenya o l\\\'usuari està malament</string>
+    <string name="e_pass">Les contrasenyes han de ser iguals</string>
+    <string name="CrearUsuario">Crear nou usuari</string>
+    <string name="e_passw">La constrasenya ha de tenir entre 8 i 14 caràcters</string>
+    <string name="title_activity_login">Iniciar sessió</string>
+
+</resources>

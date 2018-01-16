@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manuelsanchezferna.json.PerfilArtista">
+
+
+    <ImageView
+        android:id="@+id/imagen_perfilArtista"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="false"
+        android:scaleType="centerInside"
+        android:theme="@style/Base.AlertDialog.AppCompat.Light"
+        app:srcCompat="@android:color/background_dark"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/spinner2"
+        android:layout_alignLeft="@+id/favoritos1"
+        android:layout_alignStart="@+id/favoritos1" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@android:drawable/btn_default"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:id="@+id/username_artista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/siguiendo1"
+        android:layout_alignStart="@+id/siguiendo1"
+        android:layout_alignTop="@+id/imagen_perfilArtista"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:text="@string/Usuario"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/emailArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_artista"
+        android:layout_alignStart="@+id/username_artista"
+        android:layout_below="@+id/username_artista"
+        android:layout_marginTop="14dp"
+        android:text="@string/Email"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailArtista"
+        android:layout_alignStart="@+id/emailArtista"
+        android:layout_below="@+id/emailArtista"
+        android:layout_marginTop="12dp"
+        android:text="@string/Descripcion_del_artista"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/puntuacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagen_perfilArtista"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Puntuacion"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btn_puntuacion"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="25sp"
+        android:layout_height="35sp"
+        android:layout_below="@id/imagen_perfilArtista"
+        android:layout_marginLeft="117dp"
+        android:layout_marginTop="5dp"/>
+
+    <ToggleButton
+        android:id="@+id/btn_follow"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="80sp"
+        android:layout_height="35sp"
+        android:layout_alignLeft="@+id/descripcion"
+        android:layout_below="@+id/descripcion"
+        android:onClick="cfollow"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textOff="@string/Follow"
+        android:textOn="@string/Unfollow" />
+
+    <Button
+        android:id="@+id/btn_opciones"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="40sp"
+        android:layout_height="35sp"
+        android:layout_alignLeft="@+id/btn_follow"
+        android:layout_below="@+id/descripcion"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="..."
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/linia1"
+        android:layout_height="2sp"
+        android:layout_width="wrap_content"
+        android:background="#9e9b9b"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btn_follow" />
+
+    <View
+        android:id="@+id/linia2"
+        android:layout_height="2sp"
+        android:layout_width="wrap_content"
+        android:background="#9e9b9b"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/linia1" />
+
+    <TextView
+        android:id="@+id/seguidores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linia1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Seguidores"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/numseguidores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seguidores"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="9dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/siguiendo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:text="@string/Siguiendo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/amigos1"
+        android:layout_alignBottom="@+id/amigos1"
+        android:layout_toRightOf="@+id/btn_puntuacion"
+        android:layout_toEndOf="@+id/btn_puntuacion"
+        android:layout_marginStart="28dp" />
+
+    <TextView
+        android:id="@+id/numsiguiendo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/siguiendo1"
+        android:layout_marginLeft="208dp"
+        android:layout_marginTop="9dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/amigos1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linia1"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Amigos"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/numamigos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amigos1"
+        android:layout_marginLeft="326dp"
+        android:layout_marginTop="9dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/favoritos1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linia2"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/FAVORITOS"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/mis_videos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/favoritos1"
+        android:layout_alignStart="@+id/favoritos1"
+        android:layout_below="@+id/RecylerFavoritos1"
+        android:layout_marginTop="5dp"
+        android:text="@string/Mis_videos"
+        android:textSize="17sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecylerFavoritos1"
+        android:layout_width= "330sp"
+        android:layout_height="180sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@+id/favoritos1"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecylerMisVideos2"
+        android:layout_width= "330sp"
+        android:layout_height="180sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="35dp"
+        android:layout_below="@+id/mis_videos"/>
+    <TextView
+        android:id="@+id/espaciador"
+        android:layout_below="@+id/RecylerMisVideos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        />
+
+</RelativeLayout>
+</ScrollView>

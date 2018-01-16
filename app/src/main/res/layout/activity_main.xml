@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manuelsanchezferna.json.MainActivity">
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/rectangle"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/btn_default"
+        android:elevation="14dp"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecylerViewTop"
+        android:layout_width= "match_parent"
+        android:layout_height="180sp"
+        android:layout_below="@+id/linia_topvideos"
+        android:layout_alignLeft="@+id/linia_topvideos"
+        android:layout_alignRight="@+id/linia_topvideos"
+         />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecylerViewVid"
+        android:layout_width= "match_parent"
+        android:layout_height="190sp"
+        android:layout_below="@+id/linia_vid"
+        android:layout_alignLeft="@+id/linia_vid"
+        android:layout_alignRight="@+id/linia_vid"
+        android:layout_above="@+id/editText" />
+
+
+    <Button
+        android:id="@+id/btn_topvideos"
+        style="@android:style/Widget.Material.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/TOP_VIDEOS"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:layout_alignBottom="@+id/search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#f1f1f1"
+        android:layout_alignRight="@+id/spinner"
+        android:layout_alignEnd="@+id/spinner" />
+
+    <View
+        android:id="@+id/linia_topvideos"
+        android:layout_marginLeft="37dp"
+        android:layout_height="5sp"
+        android:layout_width="310sp"
+        android:background="#ce009688"
+        android:layout_below="@+id/btn_topvideos" />
+    <View
+        android:id="@+id/linia_vid"
+        android:layout_marginLeft="37dp"
+        android:layout_height="5sp"
+        android:layout_width="310sp"
+        android:background="#ce009688"
+        android:layout_below="@+id/btn_videos" />
+
+    <Button
+        android:id="@+id/btn_videos"
+        style="@android:style/Widget.Material.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linia_vid"
+        android:layout_alignStart="@+id/linia_vid"
+        android:layout_below="@+id/RecylerViewTop"
+        android:layout_marginTop="11dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/VIDEOS"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+
+</RelativeLayout>

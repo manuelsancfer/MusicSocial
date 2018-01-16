@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manuelsanchezferna.json.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecylerViewTop"
+        android:layout_width= "match_parent"
+        android:layout_height="180sp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/linia_topvideos"
+        android:layout_alignLeft="@+id/linia_topvideos"
+        android:layout_alignRight="@+id/linia_topvideos"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecylerViewVid"
+        android:layout_width= "match_parent"
+        android:layout_height="190sp"
+        android:layout_below="@+id/linia_vid"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/linia_vid"
+        android:layout_alignRight="@+id/linia_vid"
+        android:layout_above="@+id/editText" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/rectangle"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/btn_default"
+        android:elevation="14dp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:id="@+id/top_videos"
+        style="@android:style/Widget.Material.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TOP VÍDEOS"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="49dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="90sp"
+        android:layout_alignBottom="@+id/search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/search"
+        android:background="#f1f1f1"
+        android:layout_alignRight="@+id/spinner"
+        android:layout_alignEnd="@+id/spinner" />
+
+    <View
+        android:id="@+id/linia_topvideos"
+        android:layout_marginLeft="37dp"
+        android:layout_height="5sp"
+        android:layout_width="510sp"
+        android:background="#ce009688"
+        android:layout_below="@+id/top_videos" />
+    <View
+        android:id="@+id/linia_vid"
+        android:layout_marginLeft="37dp"
+        android:layout_height="5sp"
+        android:layout_width="310sp"
+        android:background="#ce009688"
+        android:layout_below="@+id/videos" />
+
+    <Button
+        android:id="@+id/videos"
+        style="@android:style/Widget.Material.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="VÍDEOS"
+        android:textAppearance="@android:style/TextAppearance.Material.Small"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/RecylerViewTop"
+        android:layout_alignLeft="@+id/linia_vid"
+        android:layout_alignStart="@+id/linia_vid" />
+
+    <ImageButton
+        android:id="@+id/search"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="37sp"
+        android:layout_height="40sp"
+        android:layout_marginRight="59dp"
+        android:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_menu_search"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/mensajes"
+        android:layout_alignEnd="@+id/mensajes"
+        android:layout_marginEnd="59dp" />
+
+    <ImageButton
+        android:id="@+id/mensajes"
+        style="@android:style/Widget.Holo.Light.ImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@android:color/background_light"
+        app:srcCompat="@android:drawable/stat_notify_chat"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/linia_topvideos"
+        android:layout_alignEnd="@+id/linia_topvideos" />
+
+
+</RelativeLayout>

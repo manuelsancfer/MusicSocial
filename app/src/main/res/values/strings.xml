@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">MusicSocial</string>
+    <string name="configuracion_de_perfil">Configuración perfil</string>
+    <string name="Foto_perfil">Foto de perfil:</string>
+    <string name="Usuario">Usuario:</string>
+    <string name="Contrasenya">Contraseña:</string>
+    <string name="Subir_foto">Subir foto</string>
+    <string name="Cambiar">Cambiar</string>
+    <string name="Email">Email:</string>
+    <string name="Gustos_musicales">Gustos musicales:</string>
+    <string name="Favoritos">Favoritos:</string>
+    <string name="Privado">Privado</string>
+    <string name="Publico">Publico</string>
+    <string name="TOP_VIDEOS">TOP VÍDEOS</string>
+    <string name="VIDEOS">VÍDEOS</string>
+    <string name="Descripcion_del_artista">Descripción del artista</string>
+    <string name="Puntuacion">Puntuación</string>
+    <string name="Seguidores">SEGUIDORES</string>
+    <string name="Siguiendo">SIGUIENDO</string>
+    <string name="Amigos">AMIGOS</string>
+    <string name="FAVORITOS">FAVORITOS</string>
+    <string name="Mis_videos">Mis vídeos</string>
+    <string name="VIDEOS_FAVORITOS">VÍDEOS FAVORITOS</string>
+    <string name="i_contrasenya">No ha podido cambiarse la contraseña, el servidor no está activo
+    intentelo más tarde</string>
+    <string name="e_contrasenya">No ha podido cambiarse la contraseña, debe contener entre 8 y 14 carácteres</string>
+    <string name="a_contrasenya">La contraseña se ha cambiado con éxito</string>
+    <string name="a_email">Email cambiado con éxito</string>
+    <string name="i_email">No ha podido cambiarse el email, el servidor no está activo
+    intentelo más tarde</string>
+    <string name="i_gustos">No han podido cambiarse los gustos, el servidor no está activo
+    intentelo más tarde</string>
+    <string name="i_priv">No ha podido cambiarse la privacidad, el servidor no está activo
+    intentelo más tarde</string>
+    <string name="i_json">El servidor está actualmente fuera de servicio, intentelo más tarde</string>
+    <string name="a_gustos">Gustos musicales cambiados con éxito</string>
+    <string name="a_priv">Privacidad cambiada con éxito</string>
+    <string name="i_videos">El servidor está actualmente fuera de servicio, no se pueden cargar los vídeos.
+        Intentelo más tarde</string>
+    <string name="i_foto">Error cargando la foto de perfil. El servidor no está activo en estos momentos, intentelo más tarde</string>
+    <string name="ROCK">ROCK</string>
+    <string name="HipHop">HIP HOP</string>
+    <string name="FUSION">FUSIÓN</string>
+    <string name="SCREAMO">SCREAMO</string>
+    <string name="RAPMETAL">RAP METAL</string>
+
+
+    <string-array name="desplegable">
+        <item>Principal</item>
+        <item>Perfil</item>
+        <item>Listas de reproducción</item>
+        <item>Géneros</item>
+        <item>Agenda</item>
+        <item>Configuración</item>
+    </string-array>
+
+    <string-array name="desplegable2">
+        <item>Perfil</item>
+        <item>Principal</item>
+        <item>Listas de reproducción</item>
+        <item>Géneros</item>
+        <item>Agenda</item>
+        <item>Configuración</item>
+    </string-array>
+
+    <string-array name="desplegable4">
+        <item>Géneros</item>
+        <item>Principal</item>
+        <item>Perfil</item>
+        <item>Listas de reproducción</item>
+        <item>Agenda</item>
+        <item>Configuración</item>
+    </string-array>
+
+    <string-array name="desplegable6">
+        <item>Configuración</item>
+        <item>Principal</item>
+        <item>Perfil</item>
+        <item>Listas de reproducción</item>
+        <item>Géneros</item>
+        <item>Agenda</item>
+    </string-array>
+
+
+    <string-array name="desplegableA">
+        <item>Artista</item>
+        <item>Perfil</item>
+        <item>Principal</item>
+        <item>Listas de reproducción</item>
+        <item>Géneros</item>
+        <item>Agenda</item>
+        <item>Configuración</item>
+    </string-array>
+
+    <string name="GENEROS">GÉNEROS</string>
+    <string name="BLUES">BLUES</string>
+    <string name="Follow">Follow</string>
+    <string name="Unfollow">Unfollow</string>
+    <string name="a_follow">Has comenzado a seguir a</string>
+    <string name="a_unfollow">Has dejado de seguir a</string>
+    <string name="i_follow">No ha podido seguir/dejar de seguir por problemas en el servidor</string>
+    <string name="i_song">Ha habido un problema y no se ha podido encontrar la canción seleccionada. Inténtelo más tarde.</string>
+    <string name="i_atras">Lo sentimos, no puede volver atrás desde aquí</string>
+    <string name="i_fotonull">Debe seleccionar una foto para poder continuar</string>
+
+    <string-array name="addfav">
+        <item>Añadir a favoritos</item>
+        <item>Favorito 1</item>
+        <item>Favorito 2</item>
+        <item>Favorito 3</item>
+        <item>Favorito 4</item>
+    </string-array>
+    <string name="title_activity_login">Iniciar sesión</string>
+
+    <string name="IniciarSesion">Iniciar sesión</string>
+    <string name="CrearUsuario">Crear nuevo usuario</string>
+    <string name="Vuelva">Repita la contraseña</string>
+    <string name="crea">Crea un nuevo usuario</string>
+    <string name="e_inicio">La contraseña o el usuario está mal</string>
+    <string name="e_pass">Las contraseñas deben ser iguales</string>
+    <string name="e_passw">La contraseña debe tener entre 8 y 14 carácteres</string>
+</resources>

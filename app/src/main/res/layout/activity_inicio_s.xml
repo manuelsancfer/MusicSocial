@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" >
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manuelsanchezferna.json.InicioS">
+
+    <TextView
+        android:id="@+id/inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/usuario"
+        android:layout_alignStart="@+id/usuario" />
+
+    <TextView
+        android:id="@+id/inicia_sesion"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/IniciarSesion"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/inicio"
+        android:layout_alignLeft="@+id/nuser"
+        android:layout_alignStart="@+id/nuser" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Contrasenya"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:layout_below="@+id/usuario"
+        android:layout_alignLeft="@+id/crea" />
+
+    <EditText
+        android:id="@+id/usuario"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Usuario"
+        android:singleLine="false"
+        android:textSize="18sp"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/inicio"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_alignStart="@+id/pass" />
+
+    <Button
+        android:id="@+id/btn_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/pass"
+        android:layout_alignRight="@+id/pass"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="15dp"
+        android:onClick="iniciars"
+        android:text="@string/IniciarSesion" />
+
+    <View
+        android:id="@+id/linia_inicio"
+        android:layout_marginLeft="50dp"
+        android:layout_height="3sp"
+        android:layout_width="260sp"
+        android:background="#ce009688"
+        android:layout_below="@+id/btn_inicio"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/crea"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="@string/crea"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/btn_inicio"
+        android:layout_alignLeft="@+id/nuser"
+        android:layout_alignStart="@+id/nuser" />
+
+    <EditText
+        android:id="@+id/nuser"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/crea"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="9dp"
+        android:hint="@string/Usuario"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/npass"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nuser"
+        android:layout_marginLeft="60dp"
+        android:hint="@string/Contrasenya"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/npass2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/npass"
+        android:hint="@string/Vuelva"
+        android:inputType="textPassword"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/nmail"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/npass2"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_nuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/nmail"
+        android:layout_alignRight="@+id/nmail"
+        android:layout_below="@+id/nmail"
+        android:layout_marginTop="10dp"
+        android:onClick="nuevouser"
+        android:text="@string/CrearUsuario" />
+
+
+</RelativeLayout>
+</ScrollView>

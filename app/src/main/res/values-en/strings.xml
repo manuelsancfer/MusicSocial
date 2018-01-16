@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MusicSocial</string>
+    <string name="Amigos">FRIENDS</string>
+    <string name="Cambiar">Change</string>
+    <string name="Contrasenya">Password:</string>
+    <string name="Descripcion_del_artista">Description of the artist</string>
+    <string name="Email">Email:</string>
+    <string name="FAVORITOS">FAVORITES</string>
+    <string name="Favoritos">Favorites:</string>
+    <string name="Foto_perfil">Profile picture:</string>
+    <string name="Gustos_musicales">Musical tastes</string>
+    <string name="Mis_videos">My videos</string>
+    <string name="Privado">Private</string>
+    <string name="Publico">Public</string>
+    <string name="Puntuacion">Score</string>
+    <string name="Seguidores">FOLLOWERS</string>
+    <string name="Siguiendo">FOLLOWING</string>
+    <string name="Subir_foto">Upload photo</string>
+    <string name="TOP_VIDEOS">TOP VIDEOS</string>
+    <string name="Usuario">User:</string>
+    <string name="VIDEOS">VIDEOS</string>
+    <string name="VIDEOS_FAVORITOS">FAVORITE VIDEOS</string>
+    <string name="configuracion_de_perfil">Profile configuration</string>
+    <string name="a_contrasenya">The password has been changed successfully</string>
+    <string name="a_email">Email changed successfully</string>
+    <string name="a_gustos">Musical tastes changed successfully</string>
+    <string name="e_contrasenya">The password could not be changed, it must contain between 8 and 14 characters</string>
+    <string name="i_json">The server is currently out of service, try it later</string>
+    <string name="i_contrasenya">The password could not be changed, the server is not active
+     try it later</string>
+    <string name="i_videos">The server is currently out of service, the videos can not be loaded.
+         Try it later</string>
+    <string name="i_gustos">The tastes could not be changed, the server is not active try it later</string>
+    <string name="i_priv">Could not change the privacy, the server is not active
+     try it later</string>
+    <string name="i_email">The email could not be changed, the server is not active
+     try it later</string>
+    <string name="a_priv">Privacy changed successfully</string>
+    <string name="i_foto">Error loading the profile picture. The server is not active at this time,
+        try it later</string>
+    <string name="ROCK">ROCK</string>
+    <string name="HipHop">HIP HOP</string>
+    <string name="RAPMETAL">RAP METAL</string>
+    <string name="FUSION">FUSION</string>
+    <string name="GENEROS">GENRES</string>
+    <string name="BLUES">BLUES</string>
+    <string name="Follow">Follow</string>
+    <string name="Unfollow">Unfollow</string>
+    <string name="a_follow">You have to started to follow</string>
+    <string name="a_unfollow">You have stopped following</string>
+    <string name="i_follow">Could not continue / stop following due to server problems</string>
+
+    <string-array name="desplegable">
+        <item>Principal</item>
+        <item>Profile</item>
+        <item>Playlists</item>
+        <item>Genres</item>
+        <item>Calendar</item>
+        <item>Configuration</item>
+    </string-array>
+
+    <string-array name="desplegable2">
+        <item>Profile</item>
+        <item>Principal</item>
+        <item>Playlists</item>
+        <item>Genres</item>
+        <item>Calendar</item>
+        <item>Configuration</item>
+    </string-array>
+
+    <string-array name="desplegable4">
+        <item>Genres</item>
+        <item>Principal</item>
+        <item>Profile</item>
+        <item>Playlists</item>
+        <item>Calendar</item>
+        <item>Configuration</item>
+    </string-array>
+
+    <string-array name="desplegable6">
+        <item>Configuration</item>
+        <item>Principal</item>
+        <item>Profile</item>
+        <item>Playlists</item>
+        <item>Genres</item>
+        <item>Calendar</item>
+    </string-array>
+    <string-array name="desplegableA">
+        <item>Artista</item>
+        <item>Profile</item>
+        <item>Principal</item>
+        <item>Playlists</item>
+        <item>Genres</item>
+        <item>Calendar</item>
+        <item>Configuration</item>
+    </string-array>
+    <string name="i_atras">Sorry, you can\'t go back from here</string>
+    <string name="i_fotonull">You must select a photo to continue</string>
+    <string-array name="addfav">
+        <item>Add to favourites</item>
+        <item>Favourite 1</item>
+        <item>Favourite 2</item>
+        <item>Favourite 3</item>
+        <item>Favourite 4</item>
+    </string-array>
+
+    <string name="i_song">There was a problem and the song selected could not be found. Try it again later.</string>
+    <string name="INICIO">MusicSocial</string>
+    <string name="IniciarSesion">Log in</string>
+    <string name="SCREAMO">SCREAMO</string>
+    <string name="Vuelva">Repetiu la contrasenya</string>
+    <string name="crea">Create a new user</string>
+    <string name="e_inicio">The password or the user is wrong</string>
+    <string name="e_pass">Passwords must be the same</string>
+    <string name="CrearUsuario">Create new user</string>
+    <string name="e_passw">The password must have between 8 and 14 characters</string>
+    <string name="title_activity_login">Log in</string>
+</resources>
