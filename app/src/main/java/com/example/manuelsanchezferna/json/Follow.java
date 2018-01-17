@@ -8,7 +8,6 @@ public class Follow {
 
     private String nameu;
 
-
     public String getNameu() {
         return nameu;
     }

@@ -59,7 +59,9 @@ android:layout_height="fill_parent" >
         android:layout_marginTop="4dp"
         android:layout_below="@+id/inicia_sesion"
         android:layout_alignLeft="@+id/pass"
-        android:layout_alignStart="@+id/pass" />
+        android:layout_alignStart="@+id/pass"
+        android:inputType="textNoSuggestions"
+        />
 
     <Button
         android:id="@+id/btn_inicio"
@@ -101,7 +103,9 @@ android:layout_height="fill_parent" >
         android:layout_marginLeft="60dp"
         android:layout_marginTop="9dp"
         android:hint="@string/Usuario"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:inputType="textNoSuggestions"
+        />
 
     <EditText
         android:id="@+id/npass"

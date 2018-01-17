@@ -1,13 +1,9 @@
 package com.example.manuelsanchezferna.json;
 
 import android.app.ProgressDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.preference.DialogPreference;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -91,30 +87,43 @@ public class InicioS extends AppCompatActivity {
 
     public void nuevouser(View view) {
 
-            if(npass.length()>7 && npass.length()<15){
-                String pass1 = npass.getText().toString(), pass2=npass2.getText().toString();
+        if(!nmail.getText().toString().contains(" ")){
+            if (nuser.length() < 12 && !nuser.getText().toString().contains(" ")) {
 
-            if (pass1.equals(pass2)) {
+                if (npass.length() > 7 && npass.length() < 15 && !npass.getText().toString().contains(" ")) {
+                    String pass1 = npass.getText().toString(), pass2 = npass2.getText().toString();
 
-                String url = "https://unguled-flash.000webhostapp.com/Consultas/nuevousuario.php?user="
-                +nuser.getText()+"&pass="+pass1+"&email="+nmail.getText();
-                Jnuevo(url);
-                loading();
+                    if (pass1.equals(pass2)) {
+
+                        String url = "https://unguled-flash.000webhostapp.com/Consultas/nuevousuario.php?user="
+                                + nuser.getText() + "&pass=" + pass1 + "&email=" + nmail.getText();
+                        Jnuevo(url);
+                        loading();
+                    } else {
+                        Toast.makeText(getApplicationContext(),
+                                getResources().getString(R.string.e_pass),
+                                Toast.LENGTH_LONG).show();
+
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(),
+                            getResources().getString(R.string.e_passw),
+                            Toast.LENGTH_LONG).show();
+                }
             }
+
             else{
                 Toast.makeText(getApplicationContext(),
-                        getResources().getString(R.string.e_pass),
+                        getResources().getString(R.string.e_user),
                         Toast.LENGTH_LONG).show();
-
             }
-        }
-
-
-        else{
+      }
+      else{
             Toast.makeText(getApplicationContext(),
-                    getResources().getString(R.string.e_passw),
+                    getResources().getString(R.string.e_email),
                     Toast.LENGTH_LONG).show();
         }
+
     }
 
     private void Jnuevo(String url){

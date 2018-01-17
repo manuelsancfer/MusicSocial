@@ -1,6 +1,5 @@
 package com.example.manuelsanchezferna.json;
 
-import java.util.List;
 
 /**
  * Created by manuel.sanchez.ferna on 01/12/2017.

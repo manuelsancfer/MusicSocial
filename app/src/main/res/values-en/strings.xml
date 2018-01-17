@@ -25,7 +25,7 @@
     <string name="a_contrasenya">The password has been changed successfully</string>
     <string name="a_email">Email changed successfully</string>
     <string name="a_gustos">Musical tastes changed successfully</string>
-    <string name="e_contrasenya">The password could not be changed, it must contain between 8 and 14 characters</string>
+    <string name="e_contrasenya">The password could not be changed, it must contain between 8 and 14 characters and can not contain spaces</string>
     <string name="i_json">The server is currently out of service, try it later</string>
     <string name="i_contrasenya">The password could not be changed, the server is not active
      try it later</string>
@@ -113,7 +113,7 @@
     <string name="e_inicio">The password or the user is wrong</string>
     <string name="e_pass">Passwords must be the same</string>
     <string name="CrearUsuario">Create new user</string>
-    <string name="e_passw">The password must have between 8 and 14 characters</string>
+    <string name="e_passw">The password must have between 8 and 14 characters and cant not contain spaces</string>
     <string name="title_activity_login">Log in</string>
     <string name="subir_imagen">Image uploaded to the server</string>
     <string name="correct_imagen">Uploaded successfully</string>
@@ -121,4 +121,6 @@
     <string name="error_imagen">Couldn\'t upload the image</string>
     <string name="bienvenida">Welcome to MusicSocial!</string>
     <string name="saludo">Welcome!</string>
+    <string name="e_email">The email can not contain spaces</string>
+    <string name="e_user">The user can only have 12 characters maximum</string>
 </resources>

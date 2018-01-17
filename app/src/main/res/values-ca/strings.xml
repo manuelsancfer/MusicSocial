@@ -75,7 +75,7 @@
     <string name="i_json">El servidor està actualment fora de servei, intenteu més tard</string>
     <string name="i_contrasenya">No s\'ha pogut canviar la contrasenya, el servidor no està actiu
      intente-ho més tard</string>
-    <string name="e_contrasenya">No\'s ha pogut canviar la contrasenya, ha de tenir entre 8 i 14 caràcters</string>
+    <string name="e_contrasenya">No\'s ha pogut canviar la contrasenya, ha de tenir entre 8 i 14 caràcters i no pot contenir espais</string>
     <string name="i_email">No s\'ha pogut canviar-se el correu electrònic, el servidor no està actiu
      intente-ho més tard</string>
     <string name="i_gustos">No s\'han pogut canviar els gustos, el servidor no està actiu
@@ -114,7 +114,7 @@
     <string name="e_inicio">La contrasenya o l\\\'usuari està malament</string>
     <string name="e_pass">Les contrasenyes han de ser iguals</string>
     <string name="CrearUsuario">Crear nou usuari</string>
-    <string name="e_passw">La constrasenya ha de tenir entre 8 i 14 caràcters</string>
+    <string name="e_passw">La constrasenya ha de tenir entre 8 i 14 caràcters i no pot contenir espais</string>
     <string name="title_activity_login">Iniciar sessió</string>
     <string name="subir_imagen">Imatge penjada al servidor</string>
     <string name="correct_imagen">S\'ha penjat correctament</string>
@@ -122,5 +122,8 @@
     <string name="error_imagen">No s\'ha pogut penjar la imatge</string>
     <string name="bienvenida">Benvolgut a MusicSocial!</string>
     <string name="saludo">Benvolgut!</string>
+    <string name="e_email">El email no pot contenir espacis</string>
+    <string name="e_user">L\'usuari només pot tenir 12 caràcters com a màxim</string>
+    <string name="error" translatable="false"></string>
 
 </resources>

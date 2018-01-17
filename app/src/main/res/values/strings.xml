@@ -23,7 +23,7 @@
     <string name="VIDEOS_FAVORITOS">VÍDEOS FAVORITOS</string>
     <string name="i_contrasenya">No ha podido cambiarse la contraseña, el servidor no está activo
     intentelo más tarde</string>
-    <string name="e_contrasenya">No ha podido cambiarse la contraseña, debe contener entre 8 y 14 carácteres</string>
+    <string name="e_contrasenya">No ha podido cambiarse la contraseña, debe contener entre 8 y 14 carácteres y no puede contener espacios</string>
     <string name="a_contrasenya">La contraseña se ha cambiado con éxito</string>
     <string name="a_email">Email cambiado con éxito</string>
     <string name="i_email">No ha podido cambiarse el email, el servidor no está activo
@@ -118,7 +118,7 @@
     <string name="crea">Crea un nuevo usuario</string>
     <string name="e_inicio">La contraseña o el usuario está mal</string>
     <string name="e_pass">Las contraseñas deben ser iguales</string>
-    <string name="e_passw">La contraseña debe tener entre 8 y 14 carácteres</string>
+    <string name="e_passw">La contraseña debe tener entre 8 y 14 carácteres y no puede contener espacios</string>
     <string name="subir_imagen">Imagen subida al servidor</string>
     <string name="correct_imagen">Se ha subido correctamente</string>
     <string name="acceptar">Aceptar</string>
@@ -126,4 +126,6 @@
     <string name="error_imagen">No se pudo subir la imagen</string>
     <string name="bienvenida">Bienvenido a MusicSocial!</string>
     <string name="saludo">Bienvenido!</string>
+    <string name="e_user">El usuario solo puede tener 12 carácteres como máximo</string>
+    <string name="e_email">El email no puede contener espacios</string>
 </resources>

@@ -1,6 +1,5 @@
 package com.example.manuelsanchezferna.json;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AlertDialog;
@@ -15,7 +14,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -52,8 +50,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = getIntent();
         usuario = intent.getStringExtra("KEY_USUARIO");
 
-        makeText();
-
         top.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,16 +70,6 @@ public class MainActivity extends AppCompatActivity {
 
         createSpinner();
 
-    }
-
-    private void makeText(){
-        builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setTitle(R.string.bienvenida)
-                .setNeutralButton(R.string.acceptar, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int which) {
-                        dialog.cancel();
-                    }
-                }).create().show();
     }
 
     private void JvideosRecyclerVid(String url) {

@@ -4,21 +4,15 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.icu.text.StringSearch;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -37,8 +31,7 @@ import org.json.JSONObject;
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+
 
 public class ConfigUsuario extends AppCompatActivity {
 
@@ -75,7 +68,7 @@ public class ConfigUsuario extends AppCompatActivity {
 
     public void cpass(View view) {
 
-        if (pass.length() > 7 && pass.length() < 15) {
+        if (pass.length() > 7 && pass.length() < 15 && !pass.getText().toString().contains(" ")) {
             String url =
                     "https://unguled-flash.000webhostapp.com/Consultas/updateconfig_password.php?pass=" +
                             pass.getText() + "&user=" + usuario;
@@ -123,44 +116,52 @@ public class ConfigUsuario extends AppCompatActivity {
 
     public void cemail(View view) {
 
-        String url =
-                "https://unguled-flash.000webhostapp.com/Consultas/updateconfig_email.php?email="
-                        + email.getText() + "&user=" + usuario;
+        if(!email.getText().toString().contains(" ")) {
 
-        JsonObjectRequest jsObjRequest = new JsonObjectRequest
-                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        Log.i("Configuración", "onResponseBotonEmail");
+            String url =
+                    "https://unguled-flash.000webhostapp.com/Consultas/updateconfig_email.php?email="
+                            + email.getText() + "&user=" + usuario;
 
-                        Gson gson = new Gson();
+            JsonObjectRequest jsObjRequest = new JsonObjectRequest
+                    (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+                        @Override
+                        public void onResponse(JSONObject response) {
+                            Log.i("Configuración", "onResponseBotonEmail");
 
-                        ConsultaResponse c = gson.fromJson(response.toString(), ConsultaUserPropi.class);
+                            Gson gson = new Gson();
+
+                            ConsultaResponse c = gson.fromJson(response.toString(), ConsultaUserPropi.class);
 
 
-                        if (c.getSuccess() == 1) {
-                            Log.i("Configuracion", "makeJsonRequest: onResponse - get Success");
+                            if (c.getSuccess() == 1) {
+                                Log.i("Configuracion", "makeJsonRequest: onResponse - get Success");
+                                Toast.makeText(getApplicationContext(),
+                                        getResources().getString(R.string.a_email),
+                                        Toast.LENGTH_SHORT).show();
+                            } else {
+                                Log.i("Configuracion", "makeJsonRequest: onResponse - NOT Success");
+                                Toast.makeText(getApplicationContext(),
+                                        getResources().getString(R.string.i_email),
+                                        Toast.LENGTH_LONG).show();
+                            }
+                        }
+                    }, new Response.ErrorListener() {
+                        @Override
+                        public void onErrorResponse(VolleyError error) {
                             Toast.makeText(getApplicationContext(),
-                                    getResources().getString(R.string.a_email),
-                                    Toast.LENGTH_SHORT).show();
-                        } else {
-                            Log.i("Configuracion", "makeJsonRequest: onResponse - NOT Success");
-                            Toast.makeText(getApplicationContext(),
-                                    getResources().getString(R.string.i_email),
+                                    getResources().getString(R.string.i_json),
                                     Toast.LENGTH_LONG).show();
                         }
-                    }
-                }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(getApplicationContext(),
-                                getResources().getString(R.string.i_json),
-                                Toast.LENGTH_LONG).show();
-                    }
-                });
+                    });
 
-        Volley.newRequestQueue(this).add(jsObjRequest);
-        Log.i("Configuración", "volley");
+            Volley.newRequestQueue(this).add(jsObjRequest);
+            Log.i("Configuración", "volley");
+        }
+        else{
+            Toast.makeText(getApplicationContext(),
+                    getResources().getString(R.string.e_email),
+                    Toast.LENGTH_LONG).show();
+        }
 
     }
 
